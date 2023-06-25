@@ -29,6 +29,8 @@ html, body{
     margin: 1em;
 }
 
+
+
 .card-title{
     /* font-family: monospace; */
     font-family: 'ArcadeClassic', sans-serif;
@@ -50,6 +52,8 @@ html, body{
     position: relative;
 }
 
+
+
 .btn{
     font-family: monospace;
     text-align: center;
@@ -70,6 +74,39 @@ input[type="color"] {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+
+
+.line {
+    border: solid black 0.1em;
+    border-radius: 1em;
+}
+
+.dot1 {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: solid black;
+    margin: 0.2em;
+}
+
+.dotA {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: solid black;
+    margin: 0.2em;
+}
+
+.check {
+    height: 3em;
+    width: 3em;
+}
+
+.dot {
+    height: 3em;
+    width: 3em;
+}
+
 
 /* .btn-form{
     width: 15em;
