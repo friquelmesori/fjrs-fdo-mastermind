@@ -55,6 +55,22 @@ html, body{
     text-align: center;
 }
 
+.circulo{
+    border-radius: 50%;
+    border: solid black 0.2em;
+    height: 2em;
+    width: 2em;
+    margin: 0.5em;
+}
+
+input[type="color"] {
+    width: 2em;
+    height: 2em;
+    border: solid 0.2em black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 /* .btn-form{
     width: 15em;
 } */
