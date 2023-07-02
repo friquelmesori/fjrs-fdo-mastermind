@@ -1,71 +1,27 @@
-@import url('https://fonts.cdnfonts.com/css/arcade-classic');
-
-:root{
-    font-size: 16px;
-}
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
-    /* margin: 1em; */
-    /* background-color: black; */
-}
-
-.container-fluid{
-    height: 100%;
-    width: 100%;
-    /* margin: 1em; */
-    /* background-color: black; */
-}
-
-.card{
-    border-radius: 50%;
+body {
+    background-color: greenyellow;
+    font-family: 'Courier New', Courier, monospace;
     margin: 1em;
 }
 
 
-
-.card-title{
-    /* font-family: monospace; */
-    font-family: 'ArcadeClassic', sans-serif;
-    text-align: center;                                          
-}
-
-.card-text{
-    font-family: monospace;
-    font-size: 1.25rem;
-    /* font-family: 'ArcadeClassic', sans-serif; */
-    text-align: center; 
-    /* font-size:  ; */
-}
-
-.col-lg-6{
-    border-radius: 50%;
-    height: 50%;
-    width: 50%;
+.circle-card {
+    height: 0;
+    padding-bottom: 100%;
     position: relative;
 }
 
-
-
-.btn{
-    font-family: monospace;
-    text-align: center;
+/* DIMENSION ESTANDAR PARA TODOS LOS BOTONES */
+.btn-jugador {
+    width: 10em;
 }
 
-.circulo{
-    border-radius: 50%;
-    border: solid black 0.2em;
-    height: 2em;
-    width: 2em;
-    margin: 0.5em;
-}
 
 input[type="color"] {
     width: 2em;
@@ -74,14 +30,49 @@ input[type="color"] {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
+.circulo-usuario{
+    border-radius: 50%;
+    border: solid black 0.2em;
+    height: 2em;
+    width: 2em;
+    margin: 0.5em;
+}
 
+.tablero {
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    width: 20em;
+}
 
-.line {
+.coloresJugador {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin: 0.5em;
+}
+
+.secret {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: solid black;
+    margin: 0.5em;
+    display: none;
+}
+
+.LineaOculta {
+    border: solid black 0.1em;
+    border-radius: 1em;
+    display: none;
+}
+
+.linea {
     border: solid black 0.1em;
     border-radius: 1em;
 }
 
-.aro1 {
+.punto1 {
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -89,7 +80,7 @@ input[type="color"] {
     margin: 0.2em;
 }
 
-.aro2 {
+.puntoA {
     width: 1em;
     height: 1em;
     border-radius: 50%;
@@ -97,22 +88,25 @@ input[type="color"] {
     margin: 0.2em;
 }
 
+.rowprincipal {
+    margin-left: 0.02em;
+    margin-bottom: 0.5em;
+}
+
+.dot {
+    height: 3em;
+    width: 3em;
+}
+
 .check {
     height: 3em;
     width: 3em;
 }
 
+.answer {
+    width: 4em;
+}
+
 img {
     cursor: pointer;
 }
-
-.icono_check {
-    height: 3em;
-    width: 3em;
-}
-
-
-/* .btn-form{
-    width: 15em;
-} */
-

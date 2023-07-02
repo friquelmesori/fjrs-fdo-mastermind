@@ -1,45 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MASTERMIND</title>
 
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-
-    <!-- BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-</head>
-<body class="body bg-dark">
     
-    <div class="container-fluid bg-dark">
-        <!-- <div class="row my-5 d-flex justify-content-center align-items-center">
-            <div class="col-6 bg-warning">a</div> -->           
-        <div class="row my-5 d-flex justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-8 col-sm-10 bg-white">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-8">
-                        <div class="card my-5 border-5 border-white rounded-pill bg-white d-flex justify-content-start align-items-center">
-                            <!-- flex-column botones uno debajo del otro -->
-                            <div class="card-body d-flex flex-column">
-                              <h5 class="card-title display-3">JUGADOR</h5>
-                              <!-- <p class="card-text display-6">Juego tradicional</p> -->
-                              <!-- <label for="inputNombre" class="visually-hiden">Nombre</label> -->
-                              <input type="nombre" name="form-control" id="nombreJugador" placeholder="Nombre">
-                              <a href="../pages/nivel.html" class="btn btn-form my-1 btn-dark" onclick="saveJugador()">Siguiente</a>
-                              <a href="../index.html" class="btn my-1 btn-dark">Volver</a>
-                            </div>
-                          </div>
+    <title>MASTERMIND</title>
+</head>
+<body>
+    <!-- JUGADOR -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1">
+            <div class="circle-card mt-5">
+                <div class="card text-center p-4 ">
+                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                    <h1 class="card-title tittleblck mt-3 fs-lg-4 fs-md-3 fs-sm-4">INTRODUCE TU NOMBRE</h1>
+
+                    <!-- FORMULARIO -->
+                    <form class="row g-3">
+                        <div class="col">
+                        <label for="inputNombre" class="visually-hidden">Nombre</label>
+                        <input type="nombre" class="form-control" id="nombreJugador" placeholder="Nombre">
+                        <a href="./nivel.html" class="btn btn-form d-flex btn-dark mt-3 fs-lg-2 fs-md-1 fs-sm-1 justify-content-center" onclick="guardarNombreJugador()">SIGUIENTE</a>
+                        <a href="../index.html" class="btn btn-form d-flex btn-dark mt-1 fs-lg-2 fs-md-1 fs-sm-1 justify-content-center">VOLVER</a>
+                        </div>
+                    </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- BOOSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+crossorigin="anonymous"></script>
+
+<script src="../js/main.js"></script>
+<script src="../js/storage.js"></script>
 </body>
 </html>
