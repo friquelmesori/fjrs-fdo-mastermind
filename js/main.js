@@ -176,7 +176,7 @@ const arrayColoresDots = () => {
         console.log(coloresArray);
         compareColours(coloresArray);
     } else {
-        console.log('No hay dots con color.');
+        console.log('No hay puntos con color');
     }
 };
 
