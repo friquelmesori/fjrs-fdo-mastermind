@@ -25,8 +25,8 @@ body {
 
 
 input[type="color"] {
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
     border: solid 0.2em black;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -35,9 +35,9 @@ input[type="color"] {
 .circulo-usuario{
     border-radius: 50%;
     border: solid black 0.2em;
-    height: 2em;
-    width: 2em;
-    margin: 0.5em;
+    height: 3em;
+    width: 3em;
+    margin: 1em;
 }
 
 .tablero {
