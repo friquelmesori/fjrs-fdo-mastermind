@@ -18,19 +18,15 @@ Se ha realizado el proyeto de *MASTERMIND* para el uso y disfrute de los usuario
 
 2. ### **intrucciones.html**
 
-![Instrucciones](../fjrs-fdo-mastermind/img/intrucciones1.JPG)
+![Instrucciones](../fjrs-fdo-mastermind/img/instrucciones.JPG)
 
-![Instrucciones](../fjrs-fdo-mastermind/img/instrucciones2.JPG)
-
-![Instrucciones](../fjrs-fdo-mastermind/img/instrucciones3.JPG)
-
-2. ### **jugador.html**
+1. ### **jugador.html**
 
 ![jugador](../fjrs-fdo-mastermind/img/jugador.JPG)
 
 3. ### **nivel.html**
 
-![niveles](../fjrs-fdo-mastermind/img/niveles.JPG)
+![niveles](../fjrs-fdo-mastermind/img/nivel.JPG)
 
 4. ### **colores.html**
 
