@@ -1,4 +1,4 @@
-// ALMACENAMOS LOS COLORES DEL JUGADOR
+// Almacenamos los colores del jugador 
 
 const almacenarColores = () => {
     
@@ -14,19 +14,22 @@ const almacenarColores = () => {
   
     console.log(JSON.parse(sessionStorage.getItem("seleccionColores")));
   };
+// DOMContentLoaded : Evento se activa cuando el documento HTML se ha analizado por completo y todos los scripts diferidos se han descargado y ejecutado. 
 
   window.addEventListener("DOMContentLoaded", () => {
   
-  // Se almacenan los colores del jugador al presionar el boton seleccionar    
+  // Se almacenan los colores del jugador al presionar el boton seleccionar  
+
   const botonSeleccionar = document.querySelector(".btn-cp");
   
     //Evento de click al botón para almacenar los colores
+
     if (botonSeleccionar) {
         botonSeleccionar.addEventListener("click", almacenarColores);
     }
   });
 
-// OBTENEMOS LOS COLORES DE SESSION STORAGE
+// Recogemos los colores de la session storage
 
 let coloresGuardados = JSON.parse(sessionStorage.getItem("seleccionColores"));
 
@@ -43,17 +46,17 @@ let coloresGuardados = JSON.parse(sessionStorage.getItem("seleccionColores"));
 
 });
 
-//OBTENEMOS LA COMBINACIÓN RANDOM SECRETA
+//Para obtener la combinacion random oculta
 
 const recuperacionColores = JSON.parse(sessionStorage.getItem("seleccionColores"));
 const coloresFinales = [];
 
-// SELECCION MINIMA DE 4 COLORES
+// Minimo seleccionamos 4 colores 
     if (recuperacionColores.length < 4) {
-        console.log("Falta seleccionar colores");
+        console.log("Falta seleccionar colores por seleccionar");
     } else {
 
-        // OBTENEMOS LA COMBINACIÓN RANDOM
+        // Para obtener la combinacion random
         const mezclarColores = recuperacionColores.sort(() => Math.random() - 0.5).slice(0, 4);
 
         // Dibujamos los círculos con los colores del jugador
@@ -66,21 +69,21 @@ const coloresFinales = [];
         console.log(coloresFinales);
     }
 
-// SECCION DEL TABLERO
+// Seccion del tablero
 
-// FILA PRINCIPAL TABLERO
+// Dibujamos la fila main del tablero
 
 let currentRow = 0;
 createRow = () => {
 let rowDiv = document.createElement('div');
-    rowDiv.className = 'row rowprincipal';
+    rowDiv.className = 'row rowmain';
     rowDiv.id = 'row' + currentRow;
 let colDiv = document.createElement('div');
     colDiv.className = 'col-10 p-2 linea';
 let innerDiv = document.createElement('div');
     innerDiv.className = 'rowDots d-flex align-items-center justify-content-center flex-wrap';
 
-    // PUNTOS
+    // Puntos para jugar
 
     for (let i = 0; i < 4; i++) {
         let dotDiv1 = document.createElement('div');
@@ -92,7 +95,7 @@ let innerDiv = document.createElement('div');
 let answerDiv = document.createElement('div');
     answerDiv.className = 'd-flex flex-column align-items-center justify-content-center answer';
 
-    // PUNTOS RESPUESTA
+    // Puntos de la respuesta
 
 let innerAnswerDiv = document.createElement('div');
     innerAnswerDiv.className = 'd-flex flex-wrap';
@@ -109,7 +112,7 @@ let innerAnswerDiv = document.createElement('div');
     colDiv.appendChild(innerDiv);
     rowDiv.appendChild(colDiv);
 
-    // IMG BTN CHECK
+    // Img del boton check
 
 let colDiv2 = document.createElement('div');
     colDiv2.className = 'col-2 p-1 mt-1';
@@ -131,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         juegoDiv.appendChild(obtenerRows);
 });
 
-// PINTAR LOS PUNTOS DEL JUEGO 
+// Dibujamos los puntos del juego
 
 const pintarPunto1 = () => {
     let coloresGuardados = JSON.parse(sessionStorage.getItem("seleccionColores"));
@@ -152,7 +155,7 @@ const pintarPunto1 = () => {
 };
 document.addEventListener("DOMContentLoaded", pintarPunto1);
 
-// ARRAY COLORES DE LOS PUNTOS
+// Puntos del array colores
 
 const arrayColoresDots = () => {
     const dots = document.getElementsByClassName('punto1');
@@ -185,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     img.addEventListener('click', arrayColoresDots);
   });
 
-// COMPARAMOS ARRAYS RANDOM Y ARRAYS USER
+// Aqui comparamos los dos arrays, el array random y el array del usuario
 
 const compareColours = (coloresArray) => {
     const dotsAnswer = document.querySelectorAll(`#row${currentRow - 2} .puntoA`);
@@ -210,9 +213,11 @@ const compareColours = (coloresArray) => {
     }
   };
 
-// SUMA DE FILAS POR NIVEL
+// Aqui iremos sumando las filas segun el nivel 
 
 let contador = 1;
+
+// Aqui mensaje del perdedor 
 
 const redirectToPage = () => {
     window.location.href = './perdedor.html';
@@ -251,7 +256,7 @@ const rows = () => {
 
       });
 
-// MENSAJE DEL JUGADOR GANADOR 
+// Mensaje de ganador  
 
 let mensajeGanador = document.getElementById("resultado");
 mensajeGanador.innerHTML = `${sessionStorage.getItem("usuario")}!`;
