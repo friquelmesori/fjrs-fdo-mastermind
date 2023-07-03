@@ -29,22 +29,6 @@ const almacenarColores = () => {
     }
   });
 
-// Recogemos los colores de la session storage
-
-let coloresGuardados = JSON.parse(sessionStorage.getItem("seleccionColores"));
-
-    document.addEventListener("DOMContentLoaded", () => {
-    const circulos = document.querySelectorAll(".coloresJugador");
-        
-    if (sessionStorage.getItem("seleccionColores")) {
-        coloresGuardados = JSON.parse(sessionStorage.getItem("seleccionColores"));
-        
-        circulos.forEach((circle, index) => {
-        circle.style.backgroundColor = coloresGuardados[index] || "transparent";
-        });
-    }
-
-});
 
 //Para obtener la combinacion random oculta
 
