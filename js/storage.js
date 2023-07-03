@@ -1,4 +1,4 @@
-//SESSION STORAGE NIVEL
+//Nivel session storage
 
 const guardarFacil = () => {
     sessionStorage.setItem("level", 10);
@@ -15,13 +15,13 @@ const guardarDificil = () => {
     window.location.href = "../pages/nivelDificil.html";
 }
 
-//RECOGEMOS NIVELES
+//Recogemos los niveles
 
 let nivel = sessionStorage.getItem("level");
 console.log("¿Qué nivel es?", nivel)
 
 
-//STORAGE JUGADOR
+//Session Storage Jugador
 
 const guardarNombreJugador = () => {
 
@@ -33,7 +33,7 @@ const guardarNombreJugador = () => {
 
 }
 
-// SSELECCION DE COLORES
+// Obtenmos los Colores de niveles
 
 // Dibujamos de los círculos por el jugador
 
